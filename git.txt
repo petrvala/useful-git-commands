@@ -1,0 +1,56 @@
+# get status
+git status
+
+# create new branch and ceckout
+git checkout -b <branch-name>
+
+# create new branch from a current one
+git checkout -b <new-branch> <current-branch>
+
+# create branch from remote
+git checkout -t origin/branch-name
+
+# merge with commit
+git merge <branch-from> --commit --no-ff
+
+# show all branches, local and remote
+git branch -a
+
+# delete local branch
+git branch -d <local-branch>
+
+# force delete local branch
+git branch -D <local-branch>
+
+# create remote branch from local branch, remote place is often 'origin'
+git push --set-upstream <remote-place> <local-branch>
+
+# delete remote branch, remote place is often 'origin'
+git push <remote-place> -d <remote-branch>
+
+# show branch differences
+git diff --stat --color <first-branch> <second-branch> 
+
+# rename origin
+git remote rename origin old-origin
+
+# add new origin
+git remote add origin https://gitlab.livesystems.cz/7c/starnet.git
+
+# get branches from new origin - credentials needed
+git fetch origin
+
+# reset incorrectly inserted credentials
+git config --system --unset credential.helper
+
+# remember credentials
+git config --global credential.helper store
+
+# change branch upstream
+git branch branch_name --set-upstream-to your_new_remote/branch_name
+
+# show which branches are configured with remote
+git remote show origin
+
+# show config variables
+git config --list
