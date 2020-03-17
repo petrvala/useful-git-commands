@@ -35,7 +35,7 @@ git diff --stat --color <first-branch> <second-branch>
 git remote rename origin old-origin
 
 # add new origin
-git remote add origin https://gitlab.livesystems.cz/7c/starnet.git
+git remote add origin https://link.to/repo.git
 
 # get branches from new origin - credentials needed
 git fetch origin
