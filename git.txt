@@ -1,7 +1,7 @@
 # get status
 git status
 
-# create new branch and ceckout
+# create new branch and checkout
 git checkout -b <branch-name>
 
 # create new branch from a current one
