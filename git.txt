@@ -40,6 +40,9 @@ git remote add origin https://link.to/repo.git
 # remove old-origin
 git remote remove old-origin
 
+# delete local links to deleted remote branches
+git remote prune origin
+
 # get branches from new origin - credentials needed
 git fetch origin
 
