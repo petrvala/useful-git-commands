@@ -37,6 +37,9 @@ git remote rename origin old-origin
 # add new origin
 git remote add origin https://link.to/repo.git
 
+# remove old-origin
+git remote remove old-origin
+
 # get branches from new origin - credentials needed
 git fetch origin
 
