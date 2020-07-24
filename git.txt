@@ -58,5 +58,8 @@ git branch branch_name --set-upstream-to your_new_remote/branch_name
 # show which branches are configured with remote
 git remote show origin
 
+# automatically set origin/HEAD to the correct remote branch
+git remote set-head origin -a
+
 # show config variables
 git config --list
