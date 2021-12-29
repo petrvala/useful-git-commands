@@ -8,7 +8,7 @@ git checkout -b <branch-name>
 git checkout -b <new-branch> <current-branch>
 
 # create branch from remote
-git checkout -t origin/branch-name
+git checkout -t origin/<branch-name>
 
 # merge with commit
 git merge <branch-from> --commit --no-ff
@@ -63,3 +63,9 @@ git remote set-head origin -a
 
 # show config variables
 git config --list
+
+# stop tracking file
+git rm --cached <file>
+
+# stop tracking directory
+git rm -r --cached <directory>
