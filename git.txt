@@ -69,3 +69,9 @@ git rm --cached <file>
 
 # stop tracking directory
 git rm -r --cached <directory>
+
+# check the existing permissions of files in the current dir
+git ls-files --stage
+
+# add execute permission on a file
+git update-index --chmod=+x <filename>
