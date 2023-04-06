@@ -13,6 +13,9 @@ git checkout -t origin/<branch-name>
 # merge with commit
 git merge <branch-from> --commit --no-ff
 
+# discard changes in all unstaged files in current working directory
+git restore .
+
 # show all branches, local and remote
 git branch -a
 
