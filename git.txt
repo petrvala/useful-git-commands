@@ -10,6 +10,9 @@ git checkout -b <new-branch> <current-branch>
 # create branch from remote
 git checkout -t origin/<branch-name>
 
+# modify existing unpushed commit
+git commit --amend -m "New commit message"
+
 # merge with commit
 git merge <branch-from> --commit --no-ff
 
