@@ -13,6 +13,9 @@ git checkout -t origin/<branch-name>
 # merge with commit
 git merge <branch-from> --commit --no-ff
 
+# switch to a new branch with actual commit
+git switch -c <new-branch>
+
 # show all branches, local and remote
 git branch -a
 
@@ -75,3 +78,4 @@ git ls-files --stage
 
 # add execute permission on a file
 git update-index --chmod=+x <filename>
+
