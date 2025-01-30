@@ -10,11 +10,17 @@ git checkout -b <new-branch> <current-branch>
 # create branch from remote
 git checkout -t origin/<branch-name>
 
+# modify existing unpushed commit
+git commit --amend -m "New commit message"
+
 # merge with commit
 git merge <branch-from> --commit --no-ff
 
 # switch to a new branch with actual commit
 git switch -c <new-branch>
+
+# discard changes in all unstaged files in current working directory
+git restore .
 
 # show all branches, local and remote
 git branch -a
